@@ -106,7 +106,13 @@ export default function Scene() {
         <ScrollControls pages={5} damping={0.4}>
           <Suspense fallback={null}>
             {/* Stage provides the ground and main lighting */}
-            <Stage environment="city" intensity={0.5} contactShadows={{ opacity: 0.2, blur: 3 }}>
+            <Stage
+                environment="city"
+                intensity={0.5}
+                // Remove contactShadows prop entirely
+                preset="rembrandt"          // Optional: nice studio lighting preset
+                adjustCamera={1.5}          // Optional: auto-zoom to fit model
+              >       
               <Float speed={1.2} rotationIntensity={0.05} floatIntensity={0.05}>
                 <Model />
               </Float>
@@ -115,15 +121,20 @@ export default function Scene() {
             <CameraRig />
             
             {/* Environment provides the high-gloss reflections */}
-            <Environment preset="apartment" intensity={1} />
-          </Suspense>
+            <Environment
+              preset="apartment"
+              environmentIntensity={1}      // ← correct for reflections
+              backgroundIntensity={1}       // ← correct if you also set background
+              // background={true}          // optional
+            />          
+            </Suspense>
           <Scroll html>
   <div className="w-screen min-h-[500vh] font-sans relative">  {/* ← use min-h-[500vh] or calc(100vh * 5) for exactly 5 pages */}
     {/* Stronger cinematic vignette + subtle overlay to reduce eye strain on bright model */}
     {content.map((item, i) => (
       <section
         key={i}
-        className={`h-screen w-screen flex items-center px-8 sm:px-16 md:px-24 lg:px-40 text-white bg-black/30 snap-start
+        className={`h-screen w-screen flex items-center px-8 sm:px-16 md:px-24 lg:px-40 text-white bg-black/10 snap-start
           ${i % 2 === 0 ? "justify-start" : "justify-end"}`}
       >
         <div
