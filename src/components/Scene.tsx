@@ -128,64 +128,64 @@ export default function Scene() {
               // background={true}          // optional
             />          
             </Suspense>
-          <Scroll html>
-  <div className="w-screen min-h-[500vh] font-sans relative">  {/* ← use min-h-[500vh] or calc(100vh * 5) for exactly 5 pages */}
-    {/* Stronger cinematic vignette + subtle overlay to reduce eye strain on bright model */}
-    {content.map((item, i) => (
-      <section
-        key={i}
-        className={`h-screen w-screen flex items-center px-8 sm:px-16 md:px-24 lg:px-40 text-white bg-black/10 snap-start
-          ${i % 2 === 0 ? "justify-start" : "justify-end"}`}
-      >
-        <div
-          className={`relative z-10 max-w-2xl lg:max-w-3xl
-            ${i % 2 === 0 ? "text-left pr-4 lg:pr-20" : "text-right pl-4 lg:pl-20 ml-auto"}`}
-        >
-          {/* Kicker – tighter tracking, Porsche-like precision */}
-          <p className="text-xs sm:text-sm font-black tracking-[0.35em] text-red-600/90 mb-4 md:mb-6 uppercase">
-            {item.kicker}
-          </p>
+              <Scroll html>
+                  <div className="w-screen min-h-[500vh] font-sans relative">  {/* ← use min-h-[500vh] or calc(100vh * 5) for exactly 5 pages */}
+                    {/* Stronger cinematic vignette + subtle overlay to reduce eye strain on bright model */}
+                    {content.map((item, i) => (
+                      <section
+                        key={i}
+                        className={`h-screen w-screen flex items-center px-8 sm:px-16 md:px-24 lg:px-40 text-white bg-black/10 snap-start
+                          ${i % 2 === 0 ? "justify-start" : "justify-end"}`}
+                      >
+                        <div
+                          className={`relative z-10 max-w-2xl lg:max-w-3xl
+                            ${i % 2 === 0 ? "text-left pr-4 lg:pr-20" : "text-right pl-4 lg:pl-20 ml-auto"}`}
+                        >
+                          {/* Kicker – tighter tracking, Porsche-like precision */}
+                          <p className="text-xs sm:text-sm font-black tracking-[0.35em] text-red-600/90 mb-4 md:mb-6 uppercase">
+                            {item.kicker}
+                          </p>
 
-          {/* Title – bigger impact, gradient only on key word if you want, but current is bold */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black uppercase leading-[0.82] mb-2 md:mb-4
-                         bg-gradient-to-r from-white via-white to-red-600/80 bg-clip-text text-transparent">
-            {item.title}
-          </h1>
+                          {/* Title – bigger impact, gradient only on key word if you want, but current is bold */}
+                          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black uppercase leading-[0.82] mb-2 md:mb-4
+                                        bg-gradient-to-r from-white via-white to-red-600/80 bg-clip-text text-transparent">
+                            {item.title}
+                          </h1>
 
-          {/* Subtitle – slightly lighter, elegant */}
-          <h2 className="text-md sm:text-xl md:text-2xl lg:text-3xl font-light italic text-white/85 mb-6 md:mb-10">
-            {item.subtitle}
-          </h2>
+                          {/* Subtitle – slightly lighter, elegant */}
+                          <h2 className="text-md sm:text-xl md:text-2xl lg:text-3xl font-light italic text-white/85 mb-6 md:mb-10">
+                            {item.subtitle}
+                          </h2>
 
-          {/* Divider – sharper, metallic feel */}
-          <div className={`w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-red-600 to-red-400 mb-6 md:mb-10 
-                           ${i % 2 === 0 ? "mr-auto" : "ml-auto"}`} />
+                          {/* Divider – sharper, metallic feel */}
+                          <div className={`w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-red-600 to-red-400 mb-6 md:mb-10 
+                                          ${i % 2 === 0 ? "mr-auto" : "ml-auto"}`} />
 
-          {/* Body text – better readability, slightly larger on mobile */}
-          <p className="text-sm sm:text-lg md:text-2xl leading-relaxed max-w-xl lg:max-w-2xl font-medium text-white/75">
-            {item.text}
-          </p>
+                          {/* Body text – better readability, slightly larger on mobile */}
+                          <p className="text-sm sm:text-lg md:text-2xl leading-relaxed max-w-xl lg:max-w-2xl font-medium text-white/75">
+                            {item.text}
+                          </p>
 
-          {/* CTA – more commanding, subtle fade-in possible later */}
-          {item.cta && (
-            <p className="mt-10 md:mt-16 text-sm sm:text-base font-bold tracking-[0.25em] uppercase text-red-600/90 animate-pulse">
-              ↓ {item.cta}
-            </p>
-          )}
+                          {/* CTA – more commanding, subtle fade-in possible later */}
+                          {item.cta && (
+                            <p className="mt-10 md:mt-16 text-sm sm:text-base font-bold tracking-[0.25em] uppercase text-red-600/90 animate-pulse">
+                              ↓ {item.cta}
+                            </p>
+                          )}
 
-          {/* Footer – discreet, bottom-aligned if last section */}
-          {item.footer && (
-            <div className="mt-16 md:mt-24 p-6 text-center border-t border-white/10 bg-black/40">
-              <p className="text-xs md:text-sm font-mono text-red-600 uppercase tracking-widest">
-                {item.footer}
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
-    ))}
-  </div>
-</Scroll>
+                          {/* Footer – discreet, bottom-aligned if last section */}
+                          {item.footer && (
+                            <div className="mt-16 md:mt-24 p-6 text-center border-t border-white/10 bg-black/40">
+                              <p className="text-xs md:text-sm font-mono text-red-600 uppercase tracking-widest">
+                                {item.footer}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      </section>
+                    ))}
+                  </div>
+            </Scroll>
         </ScrollControls>
       </Canvas>
     </div>
