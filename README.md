@@ -14,7 +14,7 @@
 
 ---
 
-## 🏎️ Project Overview
+## Project Overview
 
 **AskPorsche** is a next-generation automotive showroom experience built with **Three.js** and **Next.js**. It showcases an interactive 3D Porsche 911 that responds to user scroll input in real-time, creating an immersive, scroll-driven cinematic experience.
 
@@ -22,37 +22,37 @@ This project demonstrates advanced 3D graphics capabilities, performance optimiz
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🎨 **Scroll-Driven 3D Animation**
+### Scroll-Driven 3D Animation
 - Porsche 911 model responds to scroll position
 - Smooth, choreographed camera movements
 - Multi-angle exploration as you scroll
 - Hardware-accelerated WebGL rendering
 - Seamless scroll-to-3D coordination
 
-### 🎬 **Cinematic Storytelling**
+### Cinematic Storytelling
 - **01 // Introduction**: Precision in motion tagline with full car reveal
 - **02 // Design**: Iconic silhouette with door open animation
 - **03 // Interior**: Driver-first cockpit showcase
 - **04 // Performance**: Rear power signature and specifications
 - **05 // Technology**: Real-time 3D experience with scroll choreography
 
-### 🎯 **Performance Optimization**
+### Performance Optimization
 - Optimized Three.js scene for smooth 60 FPS
 - Lazy-loaded 3D models
 - Efficient scroll event handling
 - Responsive canvas rendering
 - Mobile-friendly interactions
 
-### 📱 **Responsive Design**
+### Responsive Design
 - Desktop, tablet, and mobile optimized
 - Touch-friendly scroll interactions
 - Adaptive canvas sizing
 - Readable typography at all breakpoints
 - Professional Porsche-inspired color scheme
 
-### 🎪 **Interactive Camera Control**
+### Interactive Camera Control
 - Scroll controls camera position and rotation
 - Smooth interpolation between states
 - Precise choreography for each section
@@ -61,7 +61,7 @@ This project demonstrates advanced 3D graphics capabilities, performance optimiz
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |-----------|---------|
@@ -73,7 +73,7 @@ This project demonstrates advanced 3D graphics capabilities, performance optimiz
 
 ---
 
-## 📋 Project Structure
+## Project Structure
 
 ```
 porsche/
@@ -96,7 +96,7 @@ porsche/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -134,7 +134,7 @@ netlify deploy --prod
 
 ---
 
-## 🎮 How It Works
+## How It Works
 
 ### Scroll-Based Camera Control
 
@@ -172,7 +172,7 @@ Each scroll section triggers different camera movements:
 
 ---
 
-## 🎨 Design Highlights
+## Design Highlights
 
 - **Color Palette**: Black backgrounds with Porsche red accents
 - **Typography**: Bold, modern sans-serif with luxury positioning
@@ -182,7 +182,7 @@ Each scroll section triggers different camera movements:
 
 ---
 
-## 📊 Technical Achievements
+## Technical Achievements
 
 ✅ **Three.js Mastery**: Advanced 3D graphics & WebGL  
 ✅ **Scroll Synchronization**: Perfectly choreographed animations  
@@ -194,7 +194,7 @@ Each scroll section triggers different camera movements:
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Multiple car model support (different Porsche variants)
 - [ ] Interactive 3D configurator (color/wheel selection)
@@ -207,7 +207,7 @@ Each scroll section triggers different camera movements:
 
 ---
 
-## 📸 Experience Sections
+## Experience Sections
 
 | Section | Feature | Tech |
 |---------|---------|------|
@@ -219,14 +219,9 @@ Each scroll section triggers different camera movements:
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 This technology is perfect for:
-- 🏎️ **Automotive Showrooms** - Interactive product showcase
-- 🛍️ **E-Commerce Product Pages** - Premium product presentation
-- 🏠 **Real Estate** - Virtual property tours
-- 🎮 **Gaming** - Interactive storytelling
-- 📱 **Brand Experiences** - Luxury brand websites
 
 ---
 
@@ -240,7 +235,7 @@ This technology is perfect for:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This is a portfolio project showcasing Three.js expertise. If you have suggestions:
 
@@ -252,22 +247,22 @@ This is a portfolio project showcasing Three.js expertise. If you have suggestio
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 ---
 
-## 📞 Connect With Me
+## Connect With Me
 
-- **GitHub**: [@askoti](https://github.com/askoti)
-- **Portfolio**: [kastriotaliu.com](https://kastriotaliu.com)
-- **Email**: [kastriootaliiu@gmail.com](mailto:kastriootaliiu@gmail.com)
-- **LinkedIn**: [linkedin.com/in/kastriootaliiu/](https://www.linkedin.com/in/kastriootaliiu/)
+- GitHub: @askoti
+- Portfolio: kastriotaliu.com
+- Email: kastriootaliiu@gmail.com
+- LinkedIn: linkedin.com/in/kastriootaliiu/
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Three.js Community** for incredible 3D graphics library
 - **Next.js Team** for seamless React framework
